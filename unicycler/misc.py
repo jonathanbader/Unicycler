@@ -841,6 +841,7 @@ def spades_version_from_spades_output(spades_output):
 
 
 def spades_status_from_version(version):
+    log.log('Version:' + version)
     major_version = int(version.split('.')[0])
     if major_version < 3:
         return 'too old'
